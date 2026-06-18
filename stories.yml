@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: carbon footprint inquiry
+  steps:
+  - intent: ask_carbon_footprint
+  - action: utter_carbon_footprint
+
+- story: user chooses train
+  steps:
+  - intent: choose_train
+  - action: utter_choose_train
+
+- story: user chooses bus
+  steps:
+  - intent: choose_bus
+  - action: utter_choose_bus
+
+- story: user chooses flight
+  steps:
+  - intent: choose_flight
+  - action: utter_choose_flight
+
+- story: plan eco trip with recommendation
+  steps:
+  - intent: plan_trip
+  - action: utter_ask_destination
+
+  - intent: provide_destination
+  - action: utter_destination_saved
+
+  - intent: provide_budget
+  - action: utter_budget_saved
+
+  - intent: provide_travel_date
+  
+  - action: action_recommend_trip

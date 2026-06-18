@@ -1,0 +1,51 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Start eco travel planning
+  steps:
+  - intent: plan_trip
+  - action: utter_ask_destination
+
+- rule: Eco transport advice
+  steps:
+  - intent: ask_transport
+  - action: utter_transport 
+  
+- rule: Eco hotel advice
+  steps:
+  - intent: ask_hotel
+  - action: utter_hotel
+
+- rule: Eco budget advice
+  steps:
+  - intent: ask_budget
+  - action: utter_budget
+
+- rule: Save destination
+  steps:
+  - intent: provide_destination
+  - action: utter_destination_saved
+
+- rule: Save budget
+  steps:
+  - intent: provide_budget
+  - action: utter_budget_saved
+
+- rule: Human handover
+  steps:
+  - intent: request_human_advisor
+  - action: utter_human_handover
+
+
+

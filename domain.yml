@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - plan_trip
+  - ask_transport
+  - ask_hotel
+  - ask_budget
+  - provide_destination
+  - provide_budget
+  - request_human_advisor
+  - provide_travel_date
+  - ask_carbon_footprint
+  - choose_train
+  - choose_bus
+  - choose_flight
+
+
+responses:
+  utter_destination_saved:
+    - text: "Great choice! That destination sounds eco-friendly. What is your budget for this trip?"
+
+  utter_budget_saved:
+    - text: "Nice! I can help plan a trip within your budget. When do you plan to travel?"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_human_handover:
+    - text: "I will connect you with a human travel advisor. Please email support@ecotravel.com or call +49 123 456 789."
+
+  utter_ask_destination:
+    - text: "Great! I can help you plan an eco-friendly trip. Which destination would you like to visit?"
+
+
+  utter_transport:
+    - text: "Using trains, buses, bicycles, and walking are eco-friendly travel options"
+
+  utter_hotel:
+    - text: "Eco-certified hotels help reduce environmental impact."
+
+  utter_budget:
+    - text: "Budget eco travel can include hostels and public transportation."
+
+  utter_carbon_footprint:
+    - text: "Among common transport options, train travel has the lowest carbon footprint, followed by bus travel. Flights generally produce the highest carbon emissions. Choosing rail transport can significantly reduce environmental impact."
+
+  utter_choose_train:
+    - text: "Excellent choice! Train travel is one of the most eco-friendly transportation options."
+
+  utter_choose_bus:
+    - text: "Bus travel is a budget-friendly and environmentally friendly option."
+
+  utter_choose_flight:
+    - text: "Flights are fast, but they typically generate more carbon emissions than trains or buses."
+
+slots:
+  destination:
+    type: text
+    mappings:
+    - type: from_text
+
+  budget:
+    type: text
+    mappings:
+    - type: from_text 
+
+  travel_date:
+    type: text
+    mappings:
+    - type: from_text
+   
+actions:
+  - action_recommend_trip
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+

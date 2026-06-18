@@ -1,0 +1,209 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: plan_trip
+  examples: |
+    - I want to plan a trip
+    - Help me travel
+    - I want an eco friendly vacation
+    - Plan my travel
+    - I nedd a sustainable plan_trip
+
+- intent: ask_transport
+  examples: |
+    - Cheap eco travel
+    - What is the best eco transport?
+    - How can I travel sustainably?
+    - Suggest green transportation
+    - Can i use public transport?
+    
+-  intent: ask_hotel
+   examples: |
+     - Suggest eco hotels
+     - I need a green hotel
+     - Eco friendly accommodation
+
+-  intent: ask_budget
+   examples: |
+     - I have a low budget
+     - Cheap eco travel
+     - Affordable trip   
+
+-  intent: provide_destination
+   examples: |
+     - Paris
+     - Berlin
+     - Rome
+     - Amsterdam
+     - I want to visit Paris
+     - My destination is Berlin
+     - I want to go Rome
+     - I am travelling to Amsterdam
+
+-  intent: provide_budget
+   examples: |
+     - My budget is 500 euros
+     - I have 1000 euros
+     - Around 800 euros
+     - Budget is 1200 euros
+     - Cheap trip
+     - Low budget
+     - I can spend 700 euros
+
+-  intent: provide_travel_date
+   examples: |
+     - June 20
+     - Next week
+     - Tomorrow
+     - July 15
+     - August 1
+     - I will travel on June 20
+     - My travel date is July 15     
+
+- intent: ask_carbon_footprint
+  examples: |
+     - carbon footprint
+     - calculate carbon footprint
+     - compare carbon emissions
+     - which transport has lower carbon emissions
+     - is flying bad for the environment
+     - carbon impact of travel
+     - low carbon travel options
+
+- intent: choose_train
+  examples: |
+     - train
+     - by train
+     - I want to travel by train
+     - train travel
+     - I prefer train
+
+- intent: choose_bus
+  examples: |
+     - bus
+     - by bus
+     - I want to travel by bus
+     - coach
+     - bus travel
+
+- intent: choose_flight
+  examples: |
+     - flight
+     - by flight
+     - by plane
+     - I want to fly
+     - airplane
+     - plane travel 
+
+- intent: request_human_advisor
+  examples: |
+    - I want to talk to a human
+    - connect me to an advisor
+    - I need human help
+    - speak to a travel advisor
+    - can I talk to a real person
+    - please transfer me to support      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
